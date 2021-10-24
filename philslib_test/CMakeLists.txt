@@ -7,3 +7,7 @@ cmake_minimum_required (VERSION 3.8)
 add_executable (philslib_test "main.cpp" )
 
 # TODO: Add tests and install targets if needed.
+target_link_libraries(
+	philslib_test
+	PRIVATE
+	CppPhil::philslib)
